@@ -1,0 +1,20 @@
+[
+  {
+    "title":"home",
+    "url": "/home",
+    "templateUrl" : "/modules/home/home.html",
+     "controller"  : "HomeController"
+  },
+  {
+    "title":"about",
+    "url": "/about",
+    "templateUrl" : "/modules/about/about.html",
+    "controller"  : "AboutController"
+  },
+  {
+    "title":"contact",
+    "url": "/contact",
+    "templateUrl" : "/modules/contact/contact.html",
+    "controller"  : "ContactController"
+  }
+]

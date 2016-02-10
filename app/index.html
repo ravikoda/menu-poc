@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>My App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+
+    <header ng-controller="MenuController">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav" ng-repeat="menu in menus">
+                    <li><a href="#{{menu.url}}"><i class="fa fa-home"></i> {{menu.title}}</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <div ng-view></div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="modules/menu/menu_ctrl.js"></script>
+    <script src="modules/about/about_ctrl.js"></script>
+    <script src="modules/home/home_ctrl.js"></script>
+    <script src="modules/contact/contact_ctrl.js"></script>
+</body>
+</html>
